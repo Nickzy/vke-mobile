@@ -1,0 +1,94 @@
+@import '../styles/style.less';
+
+.bottom-menu{
+    min-height: 40*@un;
+    line-height: 40*@un;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid @borderColor;
+    width: 100%;
+}
+.bottom-menu-top{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+.menu-item{
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 3*@un;
+}
+.bottom-menu i{
+    color: @greyColor;
+    font-size: 30*@un;
+}
+.bottom-menu .menu-item-handle{
+    flex-grow: 40;
+    min-height: 36*@un;
+    // height: 36*@un;
+    border: 1*@un solid @greyColor;
+    border-radius: 4px;
+    margin: 7*@un 3*@un;
+    line-height: 36*@un;
+    color:@greyColor;
+    font-size: 16*@un;
+    position: relative;
+
+    textarea{
+        resize: none;
+        width: 90%;
+        border: none;
+        border-radius: 4*@un;
+        line-height: 24*@un;
+        font-size: 16*@un;
+        color: #333;
+        padding-bottom: 6*@un;
+        max-height: 90px;
+    }
+}
+.bottom-menu .menu-item-handle i{
+    position: absolute;
+    right: 10*@un;
+    font-size: 21*@un;
+    z-index: 2;
+}  
+.textareaWrap{
+    display: flex;
+    padding-top: 4*@un;
+    justify-content: center;
+    height: 30*@un;
+}
+.sendMessage{
+    color: #fff;
+    background: @baseColor;
+    text-align: center;
+    border-radius: 4*@un;
+    height: 30*@un;
+    line-height: 30*@un;
+    margin: 0 0 10*@un 0;
+    padding: 0 4*@un;
+    white-space: nowrap;
+}
+
+.bottom-menu .audioPlayback{
+    background: @baseColor;
+    border:none;
+    padding: 0 70*@un 0 40*@un;
+}
+.audioPlayback .play_botton{
+    position: absolute;
+    top: 0;
+}
+.audioPlayback .play_botton i{
+    color: #fff;
+    font-size: 24*@un;
+}
+.audioPlayback .progress_time{
+    display: block;
+}
+.audioPlayback .timeShow{
+    width: 70px;
+
+}

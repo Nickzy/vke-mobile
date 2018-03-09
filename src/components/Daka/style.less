@@ -1,0 +1,121 @@
+@import '../styles/style.less';
+//TestCard
+.cardContainer{
+    box-shadow: 0 0 10px 0 #E9E9E9;
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px 20px;
+}
+.cardContainer h3{
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: 28px;
+    font-weight: bold;
+}
+.cardContainer .audioPlayer{
+    border: 1px solid @baseColor;
+    border-radius: 100px;
+    position: relative;
+    margin: 10px 0;
+    height: 42px;
+    line-height: 41px;
+}
+.play_botton{
+    height: 41*@un;
+}
+.cardContainer .play_botton i{
+    font-size: 31px;
+    color:  @baseColor;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 4px;
+}
+.cardContainer .am-badge{
+    display: none;
+}
+.cardContainer .timeLine{
+    margin-top: 0;
+    position: absolute;
+    width: 66%;
+    top: 50%;
+    left: 40px;
+}
+.cardContainer .progress_time{
+    display: block;
+}
+.cardContainer .timeShow{
+    right: 3px;
+    color: @greyColor;
+    font-size: 12px;
+}
+.cardContainer .am-slider-handle{
+    box-shadow: 0 0 3px 0 #BFBFBF;
+    width: 18px!important;
+    height: 18px!important;
+    border: 1px solid #efefef!important;
+    margin-top: -8px!important;
+}
+.cardContainer .am-slider-track{
+    background-color: @baseColor!important;
+}
+.cardContainer .am-slider-rail{
+    background-color: #e9e9e9!important;
+}
+p.text_black {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+p.text_grey{
+    color: #5A5A5A;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+//OptionsList
+.check_default{
+    width: 16*@un;
+    height: 16*@un;
+    border-radius: 50%;
+    padding: 2*@un;
+    border: 2*@un solid #BFBFBF;
+    margin-top:6*@un;
+}
+.check_primary{
+    border-color: @baseColor;
+}
+.check_primary .check_center{
+    width: 100%;
+    height: 100%;
+    background: @baseColor;
+    border-radius: 50%;
+}
+
+.checkLabel{
+    line-height: 28px;
+    display: flex;
+}
+.checkLabel input{
+    opacity: 0;
+}
+.checkLabel .text_black{
+    width: fit-content;
+}
+.modalWrap button.text_match{
+    border: none;
+    background: none;
+}
+//已复制样式
+.am-toast-mask{
+    z-index: 21;
+    left: 50%!important;
+    width: 140px!important;
+    position: fixed;
+    text-align: center;
+    margin-left: -70px!important;
+    top: 60%;
+    white-space: nowrap;
+}

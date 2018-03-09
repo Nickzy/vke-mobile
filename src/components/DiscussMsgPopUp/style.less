@@ -1,0 +1,53 @@
+@import '../styles/style.less';
+
+.pop-wrapper{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 40%;
+    .pop-button{
+        border:1px solid @baseColor;
+        text-align: center;
+        width: 30*@un;
+        height: 30*@un;
+        line-height: 30*@un;
+        color: @baseColor;
+        border-radius: 50%;
+        top: 5*@un;
+        right: 10*@un;
+        position: absolute;
+        font-size: 16*@un;
+        background: #fff;
+    }
+    .pop-content{
+        position: absolute;
+        right: 10*@un;
+        top: 35*@un;
+        z-index: 10;
+        width: 100%;
+
+        .pop-message-box{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 5*@un;
+        }
+        .pop-message{
+            background: rgba(34,34,34,.7);
+            padding: 5*@un;
+            color: #fff;
+            font-size: 12*@un;
+            line-height: 17*@un;
+            border-radius: 2*@un;
+            width: fit-content;
+        }
+        .Avatar-container{
+            order: 1;
+            margin-left: 5*@un;
+        }
+    }
+}
+.Avatar{
+    width: 100%;
+    height: 100%;
+}

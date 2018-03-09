@@ -1,0 +1,106 @@
+@baseColor: #25D8EF;
+@greyColor:#919191;
+@borderColor:#e5e5e5;
+@matchColor:#fec631;
+@borderColor:#d2d2d2;
+@alertColor:#FF0000;;
+@un:1px;
+body{
+    margin: 0;
+}
+.am-badge-dot{
+    right: -37*@un;
+}
+.Message-of-student .am-badge-dot {
+    right: 24*@un;
+}
+.message-record .am-badge-dot {
+    top: 16*@un;
+}
+.am-tabs-default-bar-tab-active{
+    color: @baseColor;
+    font-size: 16*@un;
+}
+.am-tabs-default-bar-underline{
+    // border: none;
+    border-color: @baseColor;
+}
+#tab .am-tabs-default-bar-tab::after{
+    width: 20px;
+    margin-left: -10px;
+    background-color: @baseColor;
+    left: 50%;
+}
+#tab .am-tabs-tab-bar-wrap{
+    position: fixed;
+    z-index: 10;
+    top: 27*@un;
+    width: 100%;
+    border-bottom: 1px solid @borderColor;
+}
+#tab .am-tabs-default-bar-tab::after{
+    display: none;  
+}
+#tab .am-tabs-default-bar-tab-active::after{
+    display: block;
+}
+.am-modal.am-modal-transparent{
+    width: 270px!important;
+}
+.am-modal.am-modal-transparent .am-modal-content .am-modal-body{
+    padding: 0;
+}
+.am-list-body{
+    border:none;
+}
+.am-list-item.am-input-item{
+    background: #eeeeee;
+    border-radius: 6px;
+}
+.am-modal-mask{
+    z-index: 11;
+}
+.am-modal-wrap{
+    z-index: 12;
+}
+.am-toast{
+    z-index: 10000;
+}
+//数字键盘
+.am-number-keyboard-wrapper{
+    z-index: 20
+}
+.am-toast i{
+    font-size: 64*@un;
+    line-height: 80*@un;
+}
+.am-toast-notice-content .am-toast-text{
+    border-radius: 10*@un;
+    background: rgba(0,0,0,.6)
+}
+
+.padding_bot{
+    padding-bottom: 80px;
+}
+.bottomBtn{
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    height: 67*@un;
+}
+.bottomBtn a{
+    text-align: center;
+    width: 45%;
+    margin: 2%;
+    height: 46*@un;
+    line-height: 46*@un; 
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+.bottomBtn .baseClolor{
+    background: @baseColor;
+    color:#fff;
+    border-color:@baseColor;
+}
